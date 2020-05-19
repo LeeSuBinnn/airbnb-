@@ -1,0 +1,466 @@
+/* 초기화 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 구역별 마진&패딩 */
+header {
+    padding: 25px 150px 0px 150px;   
+}
+section {
+    padding: 0px 150px;
+}
+footer{
+    margin: 0px 150px;
+}
+section.info {
+    padding: 0;
+
+}
+/* <!-------------- header -----------------> */
+header .header_grid {
+    display: grid;
+    /* grid-template-columns: 105px 957px 540px; */
+    grid-template-columns: 105px 872px 625px;
+    grid-template-rows: 46px;
+}
+header.grid_item{
+    display: flex;
+    text-align: center;
+}
+#logo_airbnb {
+    padding-right: 3px;
+    font-size: 35px;
+}
+header .logo {
+font-family: 'Questrial', sans-serif;
+font-weight: 900;
+font-size: 22px;
+align-items: center;
+display: flex;
+color: rgb(255, 56, 92) ;
+font-weight: 900;
+/* padding: 25px 0px 0px 0px; */
+}
+
+header {    
+    font-weight: 550;        
+    font-size: 14px;
+}
+header #header-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+header .navitem {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+/* 깃허브 아이콘 */
+#icon-git {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+/* 깃허브 링크 */
+/* https://github.com/LeeSuBinnn/airbnb-.git */
+header a:link{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 550;
+    color: black;
+    display: flex;
+    text-decoration: underline;
+    /* 테두리 */
+    /* border-radius: 30px;
+    padding: 10px 4px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 1px 2px #EBEBEB;
+    background-color: white;
+    align-items: center; */
+}
+#navitem-join{
+    display: inline;
+    border-radius: 30px;
+    padding: 10px 16px;
+    margin: 4px;  
+    box-shadow: 1px 1px 1px 2px #EBEBEB;
+    background-color: #ffffff;
+}
+/* <!------------ ~~ header ------------------------> */
+/*----------------- section1. search ------------------*/
+
+.search .search-menu {
+    /* 큰 메뉴 그리드 */
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 42px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px; 
+       
+}
+.search .search-menu ul{
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    
+}
+.search .search-menu li{
+    padding-right: 23px;
+    
+}
+/* 검색바 그리드 */ 
+.search .searchbars {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    box-shadow: 2px 2px 2px 2px #F0F0F0;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #656565;
+    padding: 10px 15px;
+    font-weight: 200;
+}
+/* ★마우스 갖다대면 색깔변하게 */
+.search .searchbar:hover {
+    border: 2px solid #DDDDDD;
+    border-radius: 8px;
+    margin-right: 34px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* ★가운데 칸 나누는것 */
+.search .searchbars #searchbar1::after {
+        content: "";
+        border-right: 1px solid #DDDDDD;
+        position: relative;
+        left: 290px;
+        bottom: 5px;    
+}
+.search .searchbars #searchbar2::after {
+    content: "";
+    border-right: 1px solid #DDDDDD;
+    position: relative;
+    left: 360px;
+    bottom: 5px;
+}
+.searchbars .menu {
+    font-size: 10px;
+    color: black;
+    font-weight: 600;
+}
+#search-new {
+    display: inline;
+    background-color: #FF385C;
+    padding: 0.1px 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 10.2px;
+    font-weight: 600;
+    margin-left: -14px;
+}
+.search .searchbars .searchbar4{
+    background-color: #DB0C63;
+    margin: 0px 0px 0px 130px;
+    padding: 13px 18px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+}
+/* ------------section2. together------------------- */
+.together .title {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    padding: 40px 0px;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -1px;
+    word-spacing: -6px;
+    /* ★텍스트 그라데이션 */
+    background: -webkit-linear-gradient(left top, #92174D,#FFA797);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 32px;
+    margin-bottom: 32px;        
+}
+.together .item {
+    /* ★이렇게 하면 박스섀도 윗쪽 안생김(간단)*/
+    border-radius: 16px;
+    /*cf) border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px; <--박스섀도 윗쪽 안빠짐*/
+    box-shadow: 2px 2px 2px 2px #EEEEEE;
+    position: relative;   
+}
+/* ★사진위에 NEW */
+.together .item .new {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: #222;
+    font-weight: 800;
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+.together .items .t{
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 0px 0px 20px;   
+}
+.together .items p{
+    color: #717171;
+    font-size: 14px;
+    padding: 8px 0px 15px 20px;
+}
+.together .items {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.together .items img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+} 
+
+/* ------------ ~~~~section2. together------------------- */
+
+
+/* <!------------ sec3.onlineclass -----------------------> */
+.onlineclass {
+    background-color: black;
+    margin-top: 100px;
+    color: #ffffff;
+    padding-top: 40px;
+}
+.onlineclass .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.onlineclass .button {
+    font-size: 13px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    width: 120px;
+    height: 34px;
+    padding: 7px 15px;
+    text-align: center;    
+}
+.onlineclass p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #222222;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;   
+    padding: 16px;
+}
+#onlineclass-p{
+    background-color: black;
+    padding-bottom: 30px;
+}
+/* 그리드 */
+.onlineclass .items {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 16px;
+    padding-bottom: 80px; 
+}
+.onlineclass .item:nth-child(1) {
+    grid-row: 1/3;
+}
+.onlineclass .item:nth-child(4) {
+    grid-column: 2/4;
+}
+.onlineclass .items img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    display: block;
+}
+#img1 img {
+    height: 690px;
+}
+/* <!------------ ~~~sec3.onlineclass -----------------------> */
+
+/* <!------------ sec4.participation -----------------------> */
+.participation .grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 0.4fr 0.4fr;
+        /* color: black; */
+    grid-gap: 0px 200px;
+}
+.participation .grid .item {
+    font-size: 18px;
+}
+.participation .grid .item .title {
+    padding-right: 300px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #222222;
+}
+.participation .grid .item p {
+    padding-right: 220px;
+    padding-top: 60px;
+    color: #222222;
+    font-weight: 300;
+    line-height: 1.5;
+}    
+#button-participation {
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 8px 13px;
+    text-align: center;
+}
+/* <!------------ ~~ sec4.participation -----------------------> */
+
+/* <!--------------- sec5.info-- ------------------------- --> */
+.info .info-grid {
+    display: grid;
+    grid-template-columns: 5.5fr 5.5fr 5.5fr 5.5fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+    grid-gap: 15px 20px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F7F7F7;
+    padding: 80px 150px;
+    /* ?여기엔 전체패딩 들어간거 안들어가게 할려면어떻게 해야하는지? */
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* 표 밑줄 */
+.info .info-grid .item {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 15px;
+    /* display: flex; */
+    align-items: center; 
+    /* ??여기서 플렉스 하면 줄이 합쳐짐 */
+    color: #717171;
+}
+
+/* ★표 밑줄빼는거 */
+.info .info-grid .minus {
+    border-bottom: none;
+}
+
+.info .info-grid .item .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+.info .info-grid .item .t {
+    color: black;
+    font-size: 18px;
+}
+/* 둘째줄 세로 가운데로 */
+.info .center {
+    display: flex;
+    align-items: center;    
+}
+.info .info-grid .item .bord{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+}
+/* .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+/* <!---------------  ~~~~ sec5.info-- -------------------- --> */
+
+/* <!--------------------- sec6.etc-- -------------------- --> */
+.etc .etc-grid {
+    display: grid;
+    grid-template-columns: 11fr 11fr 11fr 11fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 80px;
+}
+.etc .etc-grid .item {
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.etc .etc-grid .item .b {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* <!---------------  ~~~~ sec6.etc-- -------------------- --> */
+
+/* <!---------------  footer-- -------------------- --> */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* padding: 1rem; */
+    /* ?간격 띄우는거 어떻게 해야할지? */
+    font-size: 14px;
+    border-top: 1px solid #dddddd;
+    padding-top: 20px;
+}
+footer .left{
+    display: flex;
+    line-height: 1.43;
+
+}
+footer ul{
+    display: flex;
+    list-style: none;
+}
+footer .right li {
+    padding-right: 30px;
+    list-style: none;
+}
+footer .left span {
+    padding: 0.5rem;
+}
+footer .right {
+    display: flex;
+    font-weight: 600;
+    line-height: 1.43;
+}
+/* 오른쪽 아이콘들 */
+footer .right i{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+/* 이미지 아이콘 */
+footer .right li img{
+    width: 18px;
+    height: 18px;
+}
+/* 밑줄 */
+.a {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+

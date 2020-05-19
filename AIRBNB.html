@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRBNB</title>
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <!-- font-family: 'Questrial', sans-serif; (에어비앤비에 쓸것)-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; (바디에 쓸 폰트) -->
+
+    <!-- 폰트오썸cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="abbstyle.css">
+
+    <!-- 페비콘 -->
+    <link rel="shortcut icon"
+        href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico"
+        type="img/favicon.ico">
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!---------------------- header --------------------------->
+    <header>
+        <div class="header_grid">
+            <div class="grid_item">
+                <span class="logo">
+                    <i class="fab fa-airbnb" id="logo_airbnb"></i>
+                    airbnb
+                </span>
+            </div>
+            <div class="grid_item"></div>
+            <div class="grid_item" id="header-menu">
+                <span class="navitem">
+                    <i class="fas fa-globe"></i>&nbsp;
+                    <i class="fas fa-angle-down"></i>
+                </span>
+
+                <span class="navitem" id="githerb-link">
+                    <!-- 깃허브아이콘 -->
+                    <img id="icon-git" src="img/icon-git.png" alt="">
+                    <a href="http://github.com/LeeSuBinnn/airbnb-.git">
+                        &nbsp;깃허브 링크</span></a>
+                <span class="navitem">체험포스팅하기</span>
+                <span class="navitem">도움말</span>
+                <span class="navitem">로그인</span>
+                <span class="navitem" id="navitem-join">회원 가입</span>
+            </div>
+    </header>
+    <!---------------------- ~~header --------------------------->
+
+    <!----------------------- sec1.search ----------------------->
+    <section class="search">
+        <!-- 큰 메뉴 그리드 -->
+        <div class="search-menu">
+            <ul>
+                <li>숙소</li>
+                <li>장기숙소</li>
+                <li>체험</li>
+                <li>온라인체험</li>
+                <li id="search-new">NEW</li>
+            </ul>
+        </div>
+        <div class="searchbars">
+            <!-- 검색바 그리드 -->
+            <span class="searchbar" id="searchbar1">
+                <span class="menu">위치</span><br>
+                어디로 여행가세요?
+            </span>
+            <span class="searchbar" id="searchbar2">
+                <span class="menu">체크인/체크아웃</span><br>
+                날씨추가
+            </span>
+            <span class="searchbar">
+                <span class="menu">인원</span><br>
+                게스트 추가
+            </span>
+            <span class="searchbar4">
+                <i class="fas fa-search"></i> 검색
+            </span>
+        </div>
+    </section>
+    <!---------------------- ~~~sec1.search ------------------------->
+    <!------------------sec2.together ------------------------------->
+    <section class="together">
+        <div class="title">
+            모두가 힘을 모아 함께 한다면, 이겨낼<br>수 있습니다.
+        </div>
+        <div class="items">
+            <div class="item">
+
+                <img src="img/1.jpg" alt="">
+                <div class="new">NEW</div>
+                <div class="t">온라인체험</div>
+                <p>세계 각지의 호스트가 진행하고 모두 함께하는
+                    독특한 체험을 즐겨보세요.</p>
+            </div>
+
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+                <div class="t">장기숙박</div>
+                <p>한 달 이상 장기 숙박할 숙소를 에어비앤비에서
+                    찾아보세요.</p>
+            </div>
+
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+                <div class="new">NEW</div>
+                <div class="t">구호 인력을 위한 숙소</div>
+                <p>코로나19 구호 인력을 위한 숙소를 찾거나
+                    제공하세요.</p>
+            </div>
+
+
+        </div>
+    </section>
+    <!------------ ~~~sec2.together ----------------------->
+
+    <!------------ sec3.onlineclass ----------------------->
+    <!-- 그리드  가로3,세로2-->
+    <section class="onlineclass">
+        <div class="title">
+            <span class="title">
+                온라인 체험 소개
+            </span>
+            <span class="button">모두 둘러보기</span>
+        </div>
+        <div id="onlineclass-p">세계 각지의 사람들과 새로운 것에 도전해보세요.호스트가<br>진행하는 실시간 영상 세션을 통해 이제 집에서도 안전하게<br>체험을 즐기실 수 있습니다.
+        </div>
+        <div class="items">
+            <div class="item" id="img1">
+                <img src="img/4.webp" alt="">
+                <p>리스본에 사는 패드로와 함께 비밀의<br>상그리아를 만들어보세요.</p>
+            </div>
+            <div class="item" id="img2">
+                <img src="img/5.webp" alt="">
+                <p>스트레칭을 하고, 호흡을 가다음고,
+                    긴장을 풀어보세요. 친구와 함께하는 요가클래스.
+                </p>
+            </div>
+            <div class="item" id="img3">
+                <img src="img/6.webp" alt="">
+                <p>암스트레담에 사는 제니스와 함께 음악을 들으며 명상하기</p>
+            </div>
+            <div class="item">
+                <img src="img/7.webp" id="img4" alt="">
+                <p>존과 함께 그림 그리며 아프리카 펭귄에게 도움의<br>손길 보내기</p>
+            </div>
+        </div>
+
+
+    </section>
+    <!------------ ~~~sec3.onlineclass ----------------------->
+
+    <!------------ sec4.participation ----------------------->
+    <section class="participation">
+        <!-- 그리드만들기 가로 3fr 3fr / 세로 1fr-->
+        <div class="grid">
+            <div class="item">
+                <div class="title">최전선에서 싸우는 구호<br>인력에게 숙소를 제공하는<br>에어비앤비의<br>노력에 동참해주세요.</div>
+            </div>
+            <div class="item">
+                <p>코로나19와 맞서 싸우는 보건의료 인력, 긴급 구호 요원,<br>응급 구조 요원 등 10만 명에게 임시 숙소를 제공하는 '구호 인력을 위한 숙소' 프로그램에 에어비앤비 호스트
+                    여러분의 참여를 부탁드립니다. 이는 감염 노출 위험이 있는 구호<br>인력에게 병원과 가까우면서도 가족과 떨어져 안전하게<br>머물 수 있는 숙소를 제공하기 위한 것입니다.
+                </p>
+            </div>
+            <div>
+                <span class="item" id="button-participation">
+                    동참하기</span>
+            </div>
+            <!--★div로 버튼 싸니까 그자리만 테두리잘들어감! -->
+
+            <div class="item"></div>
+        </div>
+
+    </section>
+    <!------------~~ sec4.participation ----------------------->
+    <!--------------- sec5.info-- --------------------------->
+    <section class="info">
+        <!-- 가로4 세로5 그리드 만들기 -->
+        <!-- 세로 : 1fr 1fr 1fr 1fr 1fr -->
+        <!-- 가로 : 5.5fr 5.5fr 5.5fr 5.5fr -->
+        <div class="info-grid">
+            <div class="item minus">
+                <!-- ★보더라인없애는것 :원래클래스이름 뒤에 없애는 클래스 적어주기!(css에 마이너스클래스만들고) -->
+                <div class="title">
+                    최신 정보 확인하기</div>
+            </div>
+            <div class="item minus">
+            </div>
+            <div class="item minus">
+            </div>
+            <div class="item minus">
+            </div>
+            <div class="item center">
+                <div class="t">게스트를 위한 정보</div>
+            </div>
+            <div class="item center">
+                <div class="t">호스트를 위한 정보</div>
+            </div>
+            <div class="item center">
+                <div class="t">코로나 19 구호 인력을 위한 정보</div>
+            </div>
+            <div class="item center">
+                <div class="t">기타</div>
+            </div>
+            <div class="item">
+                <div class="bord">여행 관련 업데이트</div>
+                알아두어야 할 사항
+            </div>
+            <div class="item">
+                <div>
+                    <div class="bord">브라이언 체스키 CEO의 메시지</div>
+                    에어비앤비 CEO의 영상 메시지 보기
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <div class="bord">구호 인력을 위한 숙소</div>프로그램에 대해 알아보기
+                </div>
+            </div>
+            <div class="item">
+                <div class="bord">에어비앤비 뉴스룸</div>최근 발표한 사항
+            </div>
+            <div class="item">
+                <div class="bord">예약 취소 옵션</div>취소 가능 대상 및 환불 범위 알아보기
+            </div>
+            <div class="item">
+                <div class="bord">호스팅에 도움이 되는 자료</div>코로나 19로 인한 영향
+            </div>
+            <div class="item">
+                <div class="bord">숙소신청</div>숙소 옵션 확인하기
+            </div>
+            <div class="item minus">
+                <div class="bord">세계보건기구</div>관련 정보 및 업데이트
+            </div>
+            <div class="item minus">
+                <div class="bord">도움말 센터</div>필요한 도움받기
+            </div>
+            <div class="item minus">
+                <div class="bord">구호 인력을 위한 숙소 제공하기</div>구호 인력 지원 방법 알아보기
+            </div>
+            <div class="item minus">
+                <div class="bord">기부하기</div>비영리 단체 지원하기
+            </div>
+            <div class="item minus">
+                <div class="bord"></div>
+            </div>
+
+
+    </section>
+    <!---------------  ~~~~ sec5.info-- -------------------- -->
+    <!--------------------- sec6.etc-- -------------------- -->
+    <section class="etc">
+        <!-- 그리드 : 가로 11fr 4개/세로 1fr 7개-->
+        <div class="etc-grid">
+            <div class="item">
+                <div class="b">소개</div>
+            </div>
+            <div class="item">
+                <div class="b">커뮤니티</div>
+            </div>
+            <div class="item">
+                <div class="b">호스팅하기</div>
+            </div>
+            <div class="item">
+                <div class="b">에어비앤비 지원</div>
+            </div>
+            <div class="item">다양성 및 소속감</div>
+            <div class="item">에어비앤비 매거진</div>
+            <div class="item">숙소 호스팅</div>
+            <div class="item">도움말 센터</div>
+            <div class="item">접근성</div>
+            <div class="item">에어비앤비 어소시에이트</div>
+            <div class="item">체험 호스팅</div>
+            <div class="item">에어비앤비 이웃 민원 지원</div>
+            <div class="item">신뢰와 안전</div>
+            <div class="item">에어비앤비 비즈니스 프로그램</div>
+            <div class="item">책임감 있는 호스팅</div>
+            <div class="item"></div>
+            <div class="item">Airbnb Citizen</div>
+            <div class="item">친구 초대하기</div>
+            <div class="item">Open Homes</div>
+            <div class="item"></div>
+            <div class="item">뉴스룸</div>
+            <div class="item">채용정보</div>
+            <div class="item">올림픽</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">자료센터</div>
+            <div class="item"></div>
+        </div>
+    </section>
+    <!---------------  ~~~~ sec6.etc-- -------------------- -->
+
+    <!---------------  footer-- -------------------- -->
+    <footer>
+        <div class="left">© 2020 Airbnb, inc. All rights reserved
+            <ul>
+                <li>
+                    <span class="">·</span>개인정보 처리방침</li>
+                <li>
+                    <span class="">·</span>이용약관</li>
+                <li>
+                    <span class="">·</span>사이트맵</li>
+                <li>
+                    <span class="">·</span>한국의 변경된 환불 정책</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="a">
+                <ul>
+                    <li>
+                        <img src="img/icon-globe.png" alt="">&nbsp한국어(KR)
+                    </li>
+                    <li>
+                        <img src="img/icon-won.png" alt="">KRW
+                    </li>
+            </div>
+            <li>
+                <i class="fab fa-facebook-f"></i>
+            </li>
+            <li>
+                <i class="fab fa-twitter"></i>
+            </li>
+            <li>
+                <img src="img/icon-camera.png" alt="">
+            </li>
+            <li>
+                <!-- 아이콘이미지 -->
+                <img src="img/icon1.jpg" alt="">
+            </li>
+            <li>
+                <!-- 아이콘이미지 -->
+                <img src="img/icon2.jpg" alt="">
+            </li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

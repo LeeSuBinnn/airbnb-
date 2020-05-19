@@ -1,0 +1,123 @@
+/* -----------그리드 전체---------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+    font-size: 16px;
+    align-items: center;
+    padding: 71px 43px ;
+    font-weight: 600;
+}
+.grid img {
+    width: 35px;
+    height: 35px;
+}
+/* ------------ ~~그리드-------------- */
+/* -------------x------------------ */
+#x {
+    font-size: 25px;
+    font-weight: 50;
+    color: #222222;
+}
+#x img {
+    width: 18px;
+    height: 18px;
+}
+/* --------------------------------- */
+/*------------ 페이스북------------- */
+#facebook {
+    background-color: #4568B2;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+#facebook i{
+    padding: 5px 10px;
+    line-height: 1.1;
+}
+/* -------------------------------- */
+
+/* -------------구글------------- */
+#google {
+    
+    background-color: white;
+    font-size: 16px;
+    /* color: black; */
+    display: flex;
+    align-items: center;
+    /* 세로가운데 */
+    font-weight: 600;
+    border: 2px solid #767676;
+    border-radius: 5px;
+    justify-content: center;
+    /* 가로가운데 */
+    line-height: 1.1;    
+}
+#google img{
+    width: 18px;
+    height: 18px;
+    padding: 5px 10px;
+}
+/* -------------------------------- */
+
+/* -------------또는------------- */
+#or {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #767676;
+    font-size: 14px;
+}
+#or div {
+    margin: 0px 1rem;
+}
+#or span {
+    /* ★가운데 선넣는것 */
+    display: inline-block;
+    /* width: 226px; */
+    width: 210px;
+    border-bottom: 1px solid #E4E4E4;
+    position: relative;
+    bottom: 10px;
+}
+
+/* -------------------------------- */
+
+/* -------------이메일------------- */
+#email {
+    display: flex;
+    justify-content: center;
+    background-color: #FF5A5F;
+    color: white;
+    border-radius: 5px;
+
+
+}
+#email i {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+}
+/* -------------------------------- */
+
+/* -------------로그인------------- */
+#login {
+    display: flex;
+    font-weight: 300;
+    border-top: 1px solid #EBEBEB;
+    padding-top: 15px;
+}
+.login-green {
+    color : #008489;
+    font-weight: 600;
+    padding-left: 0.9rem;
+}
